@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ignatius Felix Tjitradi | Machine Learning &amp; Game Developer</title>
+  <meta name="description" content="Portofolio Ignatius Felix Tjitradi, mahasiswa Teknik Informatika Universitas Surabaya yang fokus pada machine learning dan pengembangan game.">
+  <meta name="theme-color" content="#FFFEFC">
+
+  <!-- Open Graph: tampilan saat link dibagikan di media sosial -->
+  <!-- TODO: setelah deploy, ganti USERNAME dengan username GitHub Anda -->
+  <meta property="og:title" content="Ignatius Felix Tjitradi | Machine Learning & Game Developer">
+  <meta property="og:description" content="Mahasiswa Teknik Informatika Universitas Surabaya. Machine learning, game jam, dan pengembangan game.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nornyr.github.io/">
+  <meta property="og:image" content="https://nornyr.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Font: hanya bobot yang dipakai agar ringan -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Ikon: Bootstrap Icons (ikon UI) dan Devicon (logo teknologi), keduanya berlisensi MIT -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Tandai JS aktif sedini mungkin agar animasi tidak berkedip -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Lompat ke konten</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="logo" href="#top"> <span></span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#prestasi">Prestasi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <!-- TODO: ganti file assets/cv/CV-Ignatius-Felix.pdf dengan CV asli Anda -->
+        <a class="btn btn-small btn-dark" href="assets/cv/CV-Ignatius-Felix.pdf" download>
+          <i class="bi bi-download" aria-hidden="true"></i> Unduh CV
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-text reveal">
+        <p class="status-badge"><span class="dot" aria-hidden="true"></span> Terbuka untuk magang &amp; kolaborasi</p>
+        <h1 id="hero-title">Ignatius Felix Tjitradi</h1>
+        <p class="tagline"> Software Engineer </p>
+        <p class="intro">
+          Mahasiswa aktif semester 7 Teknik Informatika, Universitas Surabaya, dengan fokus
+          machine learning. Saat ini saya mengerjakan Tugas Akhir tentang sistem rekomendasi buku.
+          Di luar itu, saya mendalami pengembangan game sebagai hobi.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-accent" href="#proyek">Lihat proyek saya <i class="bi bi-arrow-down" aria-hidden="true"></i></a>
+          <a class="btn btn-outline" href="#kontak">Hubungi saya</a>
+        </div>
+      </div>
+
+      <figure class="hero-photo reveal">
+        <!-- TODO: ganti assets/img/profile.svg dengan foto Anda (rasio 4:5, mis. 800x1000 px, format .webp/.jpg < 200 KB) -->
+        <img src="assets/img/profile.jpeg" alt="Foto Ignatius Felix Tjitradi" width="400" height="500">
+        <figcaption>Surabaya, Indonesia</figcaption>
+      </figure>
+
+      <ul class="info-cards reveal" aria-label="Sorotan singkat">
+        <li class="info-card">
+          <i class="bi bi-mortarboard" aria-hidden="true"></i>
+          <div>
+            <strong>Universitas Surabaya</strong>
+            <span>Teknik Informatika, semester 7</span>
+          </div>
+        </li>
+        <li class="info-card">
+          <i class="bi bi-book" aria-hidden="true"></i>
+          <div>
+            <strong>Tugas Akhir</strong>
+            <span>Sistem rekomendasi buku</span>
+          </div>
+        </li>
+        <li>
+          <a class="info-card" href="#prestasi">
+            <i class="bi bi-trophy" aria-hidden="true"></i>
+            <div>
+              <strong>Game jam</strong>
+              <span>Peraih penghargaan</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== PROYEK ===== -->
+    <section class="section container" id="proyek" aria-labelledby="proyek-title">
+      <header class="section-head reveal">
+        <p class="eyebrow">Karya</p>
+        <h2 id="proyek-title">Proyek pilihan</h2>
+        <p>Beberapa proyek machine learning, game, dan web yang pernah saya kerjakan.</p>
+      </header>
+
+      <div class="dossiers">
+        <!-- TODO: Proyek 1. Salin satu <article class="dossier"> untuk menambah proyek. -->
+        <article class="dossier reveal" id="proyek-1">
+          <a class="dossier-media" href="assets/img/project-1.png" data-lightbox aria-label="Perbesar gambar Judul Proyek 1">
+            <!-- TODO: ganti dengan screenshot proyek (16:10, mis. 1280x800 px, .webp < 250 KB) -->
+            <img src="assets/img/project-1.png" alt="Tangkapan layar Judul Proyek 1" width="640" height="400" loading="lazy">
+          </a>
+          <div class="dossier-body">
+            <p class="category">Game</p>
+            <h3>Roku & Nana</h3>
+            <p>Sebuah game 2D yang menggabungkan elemen platformer dan puzzle.</p>
+            <dl class="meta">
+              <div><dt>Peran saya</dt><dd>Programmer</dd></div>
+              <div><dt>Jenis proyek</dt><dd>Game jam</dd></div>
+            </dl>
+            <a class="award-badge" href="#prestasi"><i class="bi bi-award" aria-hidden="true"></i> Mendapat penghargaan di Game Jam</a>
+            <ul class="tags" aria-label="Teknologi">
+              <li><i class="bi bi-unity" aria-hidden="true"></i> Unity</li>
+              <li>C#</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-small btn-accent" href="https://fettuccines.itch.io/roku-nana" target="_blank" rel="noopener"><i class="bi bi-play-fill" aria-hidden="true"></i> Mainkan</a>
+            </div>
+            <details class="contribution">
+              <summary>Kontribusi saya</summary>
+              <ul>
+                <li>Mengimplementasikan mekanik gameplay utama.</li>
+                <li>Mengimplementasikan sistem UI Boss Level.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- TODO: Proyek 2 -->
+         <article class="dossier reveal" id="proyek-2">
+          <a class="dossier-media" href="assets/img/project-2.png" data-lightbox aria-label="Perbesar gambar Judul Proyek 2">
+            <img src="assets/img/project-2.png" alt="Tangkapan layar Judul Proyek 2" width="640" height="400" loading="lazy">
+          </a>
+          <div class="dossier-body">
+            <p class="category">Game Edukasi</p>
+            <h3>Game Edukasi</h3>
+            <p>Sebuah game edukasi yang bertujuan untuk membantu anak SD membuang sampah sesuai kategori.</p>
+            <dl class="meta">
+              <div><dt>Peran saya</dt><dd>Game Developer</dd></div>
+              <div><dt>Jenis proyek</dt><dd>Proyek dosen, kelompok</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Teknologi">
+              <li><i class="devicon-unity-plain" aria-hidden="true"></i> Unity</li>
+              <li><i class="devicon-csharp-plain" aria-hidden="true"></i> C#</li>
+            </ul>
+            <details class="contribution">
+              <summary>Kontribusi saya</summary>
+              <ul>
+                <li>Mengimplementasikan mekanik gameplay utama.</li>
+                <li>Mengembangkan Level Design.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- TODO: Proyek 3 -->
+        <article class="dossier reveal" id="proyek-3">
+          <a class="dossier-media" href="assets/img/project-3.png" data-lightbox aria-label="Perbesar gambar Judul Proyek 3">
+            <img src="assets/img/project-3.png" alt="Tangkapan layar Judul Proyek 3" width="640" height="400" loading="lazy">
+          </a>
+          <div class="dossier-body">
+            <p class="category">Web</p>
+            <h3>VitaGuard</h3>
+            <p>Website kesehatan yang menyediakan informasi dan layanan untuk masyarakat. Website menyediakan fitur artikel, konsultasi, atau cek kesehatan. </p>
+            <dl class="meta">
+              <div><dt>Peran saya</dt><dd>Backend Developer</dd></div>
+              <div><dt>Jenis proyek</dt><dd>Proyek kuliah, kelompok</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Teknologi">
+              <li><i class="devicon-php-plain" aria-hidden="true"></i> PHP</li>
+              <li><i class="devicon-laravel-original" aria-hidden="true"></i> Laravel</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-small btn-outline" href="https://github.com/Yosimaril/VitaGuard" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> Kode sumber</a>
+            </div>
+            <details class="contribution">
+              <summary>Kontribusi saya</summary>
+              <ul>
+                <li>Mengembangkan backend API.</li>
+                <li>Mengelola database dan server.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- TODO: Proyek 4 -->
+         <article class="dossier reveal" id="proyek-4">
+          <a class="dossier-media" href="assets/img/project-4.png" data-lightbox aria-label="Perbesar gambar Judul Proyek 4">
+            <img src="assets/img/project-4.png" alt="Tangkapan layar Judul Proyek 4" width="640" height="400" loading="lazy">
+          </a>
+          <div class="dossier-body">
+            <p class="category">Machine Learning</p>
+            <h3>Klasifikasi Daging Ayam</h3>
+            <p>Model machine learning untuk memprediksi bagian potongan daging ayam berdasarkan data citra.</p>
+            <dl class="meta">
+              <div><dt>Peran saya</dt><dd>ML Engineer</dd></div>
+              <div><dt>Jenis proyek</dt><dd>Proyek kuliah, kelompok</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Teknologi">
+              <li><i class="devicon-python-plain" aria-hidden="true"></i> Python</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-small btn-outline" href="https://github.com/Cheijou/chicken-meat-classfication" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> Kode sumber</a>
+            </div>
+            <details class="contribution">
+              <summary>Kontribusi saya</summary>
+              <ul>
+                <li>Mengembangkan model machine learning.</li>
+                <li>Mengumpulkan dan memproses data.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+      </div>
+
+      <!-- Proyek lainnya: kartu ringkas yang bisa dibuka-tutup -->
+      <details class="collection reveal">
+        <summary>
+          <span><i class="bi bi-collection" aria-hidden="true"></i> Proyek lainnya</span>
+          <span class="collection-hint" aria-hidden="true"></span>
+        </summary>
+        <ul class="mini-grid">
+          <!-- TODO: isi atau hapus kartu di bawah ini -->
+          <li class="mini-card">
+            <img src="assets/img/4.png" alt="" width="320" height="200" loading="lazy">
+            <h3>Pamer YUK</h3>
+            <p>Proyek akhir mata kuliah Basis Data</p>
+          </li>
+          <li class="mini-card">
+            <img src="assets/img/3.png" alt="" width="320" height="200" loading="lazy">
+            <h3>Scholar Crawler</h3>
+            <p>Journal Web Crawler</p>
+          </li>
+          <li class="mini-card">
+            <img src="assets/img/5.png" alt="" width="320" height="200" loading="lazy">
+            <h3>Portal Berita</h3>
+            <p>Hybrid mobile web application</p>
+          </li>
+        </ul>
+        <p class="collection-links">
+          <!-- TODO: ganti USERNAME dengan akun GitHub dan itch.io Anda -->
+          <a href="https://github.com/Nornyr" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> Semua repositori</a>
+        </p>
+      </details>
+    </section>
+
+    <!-- ===== KEAHLIAN ===== -->
+    <section class="section container" id="keahlian" aria-labelledby="keahlian-title">
+      <header class="section-head reveal">
+        <h2 id="keahlian-title">Tech Stack</h2>
+        <p>Bahasa dan alat yang saya gunakan dalam proyek.</p>
+      </header>
+
+      <h3 class="group-title reveal">Bahasa pemrograman</h3>
+      <ul class="tech-grid reveal">
+        <li><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></li>
+        <li><i class="devicon-csharp-plain colored" aria-hidden="true"></i><span>C#</span></li>
+        <li><i class="devicon-php-plain colored" aria-hidden="true"></i><span>PHP</span></li>
+        <li><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span>JavaScript</span></li>
+        <li><i class="devicon-java-plain colored" aria-hidden="true"></i><span>Java</span></li>
+        <li><i class="devicon-kotlin-plain colored" aria-hidden="true"></i><span>Kotlin</span></li>
+        <li><i class="devicon-godot-plain colored" aria-hidden="true"></i><span>GDScript</span></li>
+        <li><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML</span></li>
+        <li><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS</span></li>
+      </ul>
+
+      <!-- TODO: sesuaikan daftar alat ini; tambahkan library ML (mis. scikit-learn, TensorFlow) bila ada -->
+      <h3 class="group-title reveal">Engine &amp; alat</h3>
+      <ul class="tech-grid reveal">
+        <li><i class="devicon-unity-plain" aria-hidden="true"></i><span>Unity</span></li>
+        <li><i class="devicon-godot-plain colored" aria-hidden="true"></i><span>Godot</span></li>
+        <li><i class="devicon-laravel-original colored" aria-hidden="true"></i><span>Laravel</span></li>
+        <li><i class="devicon-git-plain colored" aria-hidden="true"></i><span>Git</span></li>
+        <li><i class="devicon-github-original" aria-hidden="true"></i><span>GitHub</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== PENDIDIKAN & PENGALAMAN ===== -->
+    <section class="section container" id="pendidikan" aria-labelledby="pendidikan-title">
+      <header class="section-head reveal">
+        <p class="eyebrow">Perjalanan</p>
+        <h2 id="pendidikan-title">Pendidikan &amp; pengalaman</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <!-- TODO: isi tahun masuk dan perkiraan lulus -->
+          <p class="time">2023 – sekarang</p>
+          <div class="timeline-card">
+            <div class="org-logo" aria-hidden="true"><i class="bi bi-mortarboard"></i></div>
+            <div>
+              <h3>S1 Teknik Informatika</h3>
+              <p class="org">Universitas Surabaya</p>
+              <p>Mahasiswa aktif Universitas Surabaya. Semester 7 dengan fokus machine learning. Sedang mengerjakan tugas akhir tentang sistem rekomendasi buku.</p>
+              <span class="tag">Pendidikan</span>
+            </div>
+          </div>
+        </li>
+        <!-- TODO: tambahkan pengalaman lain (asisten lab, organisasi, magang) dengan menyalin <li> di atas -->
+        <li class="timeline-item reveal">
+          <p class="time">2024 – 2025</p>
+          <div class="timeline-card">
+            <div class="org-logo" aria-hidden="true"><i class="bi bi-people"></i></div>
+            <div>
+              <h3>Koordinator Divisi Produser</h3>
+              <p class="org">EFM Radio Kampus</p>
+              <p>Bertanggung jawab atas koordinasi dan manajemen divisi produser di EFM Radio Kampus.</p>
+              <span class="tag">Organisasi</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== PRESTASI ===== -->
+    <div class="container split">
+    <section class="section" id="prestasi" aria-labelledby="prestasi-title">
+      <header class="section-head reveal">
+        <p class="eyebrow">Penghargaan</p>
+        <h2 id="prestasi-title">Prestasi</h2>
+      </header>
+
+      <ul class="award-grid">
+        <!-- TODO: isi nama game jam, peringkat, tahun, dan tautan -->
+        <li class="award-card reveal">
+          <div class="award-top">
+            <div class="org-logo" aria-hidden="true"><i class="bi bi-controller"></i></div>
+            <span class="rank">Reinterpretation of Perspective Award</span>
+          </div>
+          <h3>DSU Game Jam</h3>
+          <p>2026</p>
+          <div class="award-links">
+            <a href="#proyek-1">Lihat proyek</a>
+            <a href="assets/img/UBAYA_Sigma.pdf" target="_blank" rel="noopener">Sertifikat</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section class="section contact" id="kontak" aria-labelledby="kontak-title">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Kontak</p>
+        <h2 id="kontak-title">Mari terhubung</h2>
+        <p>Saya terbuka untuk magang, proyek, maupun kolaborasi.</p>
+        <a class="email-link" href="mailto:ignatiusfelixc@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i> ignatiusfelixc@gmail.com</a>
+        <!-- TODO: ganti USERNAME pada tiap tautan sosial, hapus yang tidak dipakai -->
+        <ul class="socials">
+          <li><a href="https://github.com/Nornyr" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/ignatius-felix-tjitradi-45b0b83a1/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="https://Nabla01.itch.io" target="_blank" rel="noopener" aria-label="itch.io"><i class="bi bi-controller" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/felix_cit" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+        <img class="contact-art" src="assets/img/contact-art.svg" alt="" width="220" height="160" loading="lazy">
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Ignatius Felix Tjitradi</p>
+      <div class="footer-links">
+        <a href="#top"><i class="bi bi-arrow-up" aria-hidden="true"></i> Kembali ke atas</a>
+        <a href="assets/cv/CV-Ignatius-Felix.pdf" download>Unduh CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX GAMBAR PROYEK ===== -->
+  <dialog class="lightbox" id="lightbox" aria-label="Pratinjau gambar">
+    <div class="lightbox-bar">
+      <button type="button" class="lb-btn" id="lb-zoom" aria-pressed="false"><i class="bi bi-zoom-in" aria-hidden="true"></i> Perbesar</button>
+      <a class="lb-btn" id="lb-open" href="#" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Buka asli</a>
+      <button type="button" class="lb-btn" id="lb-close" aria-label="Tutup"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+    </div>
+    <div class="lightbox-stage">
+      <img id="lb-img" src="" alt="">
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
